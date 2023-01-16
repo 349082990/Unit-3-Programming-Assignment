@@ -254,7 +254,7 @@ function search(){
 
         // If the user's search matches any of the monsters in the list, then add it to the searchedMonster variable. Break the for loop once this has occurred
         for(let i = 0; i < monsters.length; i++){
-            if(monsters[i].name.toLowerCase() === SEARCHBOX.value){
+            if(monsters[i].name.toLowerCase() === SEARCHBOX.value.toLowerCase()){
                 searchedMonster = monsters[i];
                 break;
             }
