@@ -280,7 +280,7 @@ function search(){
                 let monster = monsters[i];
 
                 // If the user's search matches a monster type, then add current indexes in the monsters array to the monsterTypesSearched array
-                if (SEARCHBOX.value === monster.type.toLowerCase()){
+                if (SEARCHBOX.value.toLowerCase() === monster.type.toLowerCase()){
                     push(monstersTypesSearched, monster);
                 }
 
@@ -332,7 +332,7 @@ function addMonster(){
         const newMonster = {name, type, health};
 
         // Check if a monster with the same statistics already exists in the monsters array
-        let existingMonster = find(monsters, monster => monster.name.toLowerCase() === newMonster.name.toLowerCase() || monster.health === newMonster.health && monster.name === newMonster.name && monster.type.toLowerCase() === newMonster.type.toLowerCase());
+        let existingMonster = find(monsters, monster => monster.name.toLowerCase() === newMonster.name.toLowerCase() || monster.health === newMonster.health && monster.name.toLowerCase() === newMonster.name.toLowerCase() && monster.type.toLowerCase() === newMonster.type.toLowerCase());
         
         // Tell the user that either their name, health, and type is empty and if the monster doesn't exist, do not add it
         if (existingMonster || name.length === 0 || health.length === 0 || type.length === 0){
