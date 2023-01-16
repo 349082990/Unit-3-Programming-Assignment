@@ -1,0 +1,352 @@
+body {
+  background-color: #333333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form-field {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #444444;
+  color: white;
+  width:250px;
+  text-align:center;
+}
+
+#database-title{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+}
+
+#traversable-list{
+  display: none;
+}
+
+#full-list{
+  display: none;
+}
+
+#monster-list-label{
+  color: white;
+  font-size: 20px;
+}
+
+#monster-list-label-two{
+  color: white;
+  font-size: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #00cc66;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;  
+  width:100px;
+  margin:10px auto;
+  display:block;
+}
+input[type="submit"]:hover {
+  background-color: #009933;
+}
+.form-title{
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.login-form{
+  text-align: center;
+  z-index: 2;
+}
+
+#database{
+  z-index: 1;
+  height: 100%;
+}
+
+table {
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+th, td {
+  border: 1px solid black; 
+  padding: 8px; 
+}
+
+th {
+  background-color: #f2f2f2; 
+  text-align: left; 
+  color: black;
+}
+
+#search-box {
+  display: flex;
+  display: none;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#search-input {
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #444444;
+  color: white;
+  width: 362px;
+}
+
+#search-button {
+  background-color: #00cc66;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #009933;
+}  
+
+#sorting-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+#buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logout-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#traversable-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#previous{
+  background-color: #00cc66;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#previous:hover{
+  background-color: #009933;
+}
+
+#next{
+  background-color: #00cc66;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#next:hover{
+  background-color: #009933;
+}
+
+#sort-ascending{
+  background-color: #00cc66;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#sort-ascending:hover{
+  background-color: #009933;
+}
+
+#sort-descending{
+  background-color: #00cc66;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#sort-descending:hover{
+  background-color: #009933;
+}
+
+#sort-alphabetically{
+  background-color: #00cc66;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#sort-alphabetically:hover{
+  background-color: #009933;
+}
+
+#find-lowest{
+  background-color: #00cc66;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;  
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#find-lowest:hover{
+  background-color: #009933;
+}
+
+#view-full{
+  background-color: #00cc66;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;  
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#view-full:hover{
+  background-color: #009933;
+}
+
+#logout{
+  background-color: #b80b14;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+}   
+
+#logout:hover{
+  background-color: #8d0b11;
+}
+
+#shuffle{
+  background-color: #00cc66;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#shuffle:hover{
+  background-color: #009933;
+}
+
+#add-text{
+  color: white;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+#add-monsters{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: none;
+}
+
+#name{
+  padding: 8px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  border: none;
+  background-color: #444444;
+  color: white;
+  width: 250px;
+}
+
+#health{
+  padding: 8px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  border: none;
+  background-color: #444444;
+  color: white;
+  width: 250px;
+}
+
+#type{
+  padding: 8px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: none;
+  background-color: #444444;
+  color: white;
+  width: 250px;
+}
+
+#add-monster{
+  background-color: #00cc66;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#add-monster:hover{
+  background-color: #009933;
+}

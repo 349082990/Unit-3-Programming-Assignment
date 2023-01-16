@@ -1,0 +1,88 @@
+﻿<html>
+  <head>
+    <title>Monster Database</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+  </head>
+  <body>
+    <div id="login-form">
+        <div class="form-title"> Monster Database Login </div>
+          <div>
+              <label for="username">Username:</label>
+              <br>
+              <input type="text" id="username" name="username" class="form-field">
+          </div>
+          <br>
+          <div>
+              <label for="password">Password:</label>
+              <br>
+              <input type="password" id="password" name="password" class="form-field">
+          </div>
+          <br>
+          <div>
+              <input type="submit" value="Log in" onclick="login();">
+        </div>
+    </div>
+
+    <div hidden="true" id="database">
+      <h1 id="database-title">Monster Database</h1><br>
+
+      <div id="traversable-list">
+        <label for="traversable-monster-list" id="monster-list-label">Traversable Database</label>
+        <div id="traversable-monster-list"></div>
+
+        <div id="traversable-buttons">
+          <button id="previous" onclick="displayPreviousElement(monsters);">Previous</button>
+          <button id="next" onclick="displayNextElement(monsters);">Next</button>
+        </div>
+      </div>
+      
+      <br>
+
+      <div id="full-list">
+        <label for="full-monster-list" id="monster-list-label-two">Full Database</label>
+        <div id="full-monster-list"></div>
+      </div>
+
+      <div hidden="true" id="search-box">
+        <input type="text" id="search-input" placeholder="Search for a monster">
+        <button id="search-button" onclick="search();">Search</button>
+      </div>
+
+      <div id="sorting-buttons">
+        <button hidden="true" id="sort-ascending" onclick="sort(currentArray, 'ascending');">AscendingHP Sort</button>
+        <button hidden="true" id="sort-descending" onclick="sort(currentArray, 'descending');">DescendingHP Sort</button>
+        <button hidden="true" id="sort-alphabetically" onclick="sort(currentArray, 'alphabet');">Sort Name</button>
+      </div>
+
+      <div id="buttons">
+        <button hidden="true" id="find-lowest" onclick="findLowest();">Find Lowest HP</button>
+        <button hidden="true" id="view-full" onclick="viewFullArray();">View Full Array</button>
+        <button id="shuffle" onclick="shuffleArray(currentArray);">Shuffle</button>
+      </div>
+
+      <div id="logout-button">
+        <button id="logout" onclick="logout();">Log Out</button>
+      </div>
+
+      <br><br>
+
+      <div id="add-monsters">
+        <p id="add-text">Add Monsters</p>
+        <form>
+          <label for="name">Name: </label><br>
+          <input type="text" id="name"><br>
+
+          <label for="health">Health Points: </label><br>
+          <input type="number" id="health"><br>
+
+          <label for="type">Type/Category: </label><br>
+          <input type="text" id="type"><br>
+
+          <input type="button" id="add-monster" value="Add Monster" onclick="addMonster();">
+        </form>
+      </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
